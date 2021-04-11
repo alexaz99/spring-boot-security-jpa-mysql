@@ -31,6 +31,7 @@ public class MyUserDetailsService implements UserDetailsService {
 
         user.orElseThrow(() -> new UsernameNotFoundException("Not Found: " + userName));
 
+        // use a simple converter to convert to a Spring pre-defined UserDetails
         return new MyUserDetails(user.get());
     }
 }
