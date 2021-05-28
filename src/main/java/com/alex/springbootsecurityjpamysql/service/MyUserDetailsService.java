@@ -1,7 +1,8 @@
-package com.alex.springbootsecurityjpamysql;
+package com.alex.springbootsecurityjpamysql.service;
 
 import com.alex.springbootsecurityjpamysql.models.MyUserDetails;
 import com.alex.springbootsecurityjpamysql.models.User;
+import com.alex.springbootsecurityjpamysql.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

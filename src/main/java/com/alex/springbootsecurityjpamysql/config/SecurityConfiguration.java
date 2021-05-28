@@ -1,4 +1,4 @@
-package com.alex.springbootsecurityjpamysql;
+package com.alex.springbootsecurityjpamysql.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

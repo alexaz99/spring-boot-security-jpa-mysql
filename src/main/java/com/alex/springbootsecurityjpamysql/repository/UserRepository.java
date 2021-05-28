@@ -1,4 +1,4 @@
-package com.alex.springbootsecurityjpamysql;
+package com.alex.springbootsecurityjpamysql.repository;
 
 import com.alex.springbootsecurityjpamysql.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;

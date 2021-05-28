@@ -3,7 +3,8 @@ package com.alex.springbootsecurityjpamysql.models;
 import javax.persistence.*;
 
 /**
- * JPA Class
+ * JPA Entity Model Class that should match the table fields and names
+ * If it does not, we should provide the mapping here using additional annotations
  */
 @Entity
 @Table(name = "User")
