@@ -1,5 +1,7 @@
 package com.alex.springbootsecurityjpamysql.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -12,6 +14,7 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.sql.DataSource;
+import java.lang.invoke.MethodHandles;
 
 /**
  * Here we are doing to do jpa authentication instead of in memory authentication
@@ -21,6 +24,9 @@ import javax.sql.DataSource;
  */
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+
+    private final static Logger logger = LoggerFactory.getLogger(SecurityConfiguration.class);
+    //private final static Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     @Autowired
     UserDetailsService userDetailsService;
